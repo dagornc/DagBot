@@ -1,0 +1,68 @@
+{
+    "app": {
+        "title": "DagBot",
+        "subtitle": "Asistente de IA Premium",
+        "newChat": "Nueva conversación",
+        "searchPlaceholder": "Buscar...",
+        "inputPlaceholder": "Enviar un mensaje...",
+        "today": "Hoy",
+        "yesterday": "Ayer",
+        "send": "Enviar",
+        "settings": "Ajustes",
+        "conversations": "Conversaciones",
+        "noConversations": "Sin conversaciones",
+        "model": "Modelo",
+        "typing": "Escribiendo..."
+    },
+    "settings": {
+        "title": "Ajustes",
+        "subtitle": "Configurar proveedores y parámetros",
+        "modelParams": "Parámetros del modelo",
+        "modelName": "Nombre del modelo",
+        "temperature": "Temperatura",
+        "topP": "Top P",
+        "maxTokens": "Tokens máximos",
+        "presencePenalty": "Penalización de presencia",
+        "frequencyPenalty": "Penalización de frecuencia",
+        "providersTitle": "Proveedores de LLM",
+        "active": "Activo",
+        "baseUrl": "URL base",
+        "apiKey": "Clave API",
+        "defaultModel": "Modelo predeterminado",
+        "useProvider": "Usar proveedor",
+        "test": "Probar",
+        "addProvider": "Añadir nuevo proveedor",
+        "providerNameKey": "Nombre (clave)",
+        "displayName": "Nombre para mostrar",
+        "addProviderBtn": "Añadir proveedor",
+        "cancel": "Cancelar",
+        "save": "Guardar"
+    },
+    "prompts": {
+        "title": "Biblioteca de Prompts",
+        "subtitle": "Guarda y reutiliza tus mejores prompts",
+        "newPrompt": "Nuevo Prompt",
+        "searchPlaceholder": "Buscar prompts...",
+        "editPrompt": "Editar Prompt",
+        "promptTitle": "Título",
+        "promptTitlePlaceholder": "Título del prompt...",
+        "category": "Categoría",
+        "systemPrompt": "Prompt del sistema",
+        "systemPromptPlaceholder": "Eres un asistente de IA útil...",
+        "noMatchingPrompts": "No hay prompts coincidentes",
+        "noPromptsYet": "No hay prompts todavía. ¡Crea el primero!",
+        "use": "Usar"
+    },
+    "chat": {
+        "welcome": "¡Hola! ¿Cómo puedo ayudarte hoy?",
+        "codeExample": "Aquí tienes un ejemplo de código:",
+        "thinking": "Pensando...",
+        "newConversation": "Nueva conversación",
+        "systemContext": "Contexto del Sistema",
+        "systemPromptPlaceholder": "Eres un asistente útil..."
+    },
+    "sidebar": {
+        "lightMode": "Modo Claro",
+        "darkMode": "Modo Oscuro"
+    }
+}

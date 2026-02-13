@@ -1,0 +1,70 @@
+{
+    "app": {
+        "title": "DagBot",
+        "subtitle": "Assistant IA Premium",
+        "newChat": "Nouvelle conversation",
+        "searchPlaceholder": "Rechercher...",
+        "inputPlaceholder": "Envoyer un message...",
+        "today": "Aujourd'hui",
+        "yesterday": "Hier",
+        "send": "Envoyer",
+        "settings": "Paramètres",
+        "conversations": "Conversations",
+        "noConversations": "Aucune conversation",
+        "model": "Modèle",
+        "typing": "En train d'écrire..."
+    },
+    "settings": {
+        "title": "Paramètres",
+        "subtitle": "Configurer les fournisseurs et les paramètres",
+        "modelParams": "Paramètres du modèle",
+        "modelName": "Nom du modèle",
+        "temperature": "Température",
+        "topP": "Top P",
+        "maxTokens": "Max Tokens",
+        "presencePenalty": "Pénalité de présence",
+        "frequencyPenalty": "Pénalité de fréquence",
+        "providersTitle": "Fournisseurs LLM",
+        "active": "Actif",
+        "baseUrl": "URL de base",
+        "apiKey": "Clé API",
+        "model": "Modèle",
+        "autoChoose": "Choix automatique",
+        "freeOnly": "Modèles gratuits uniquement",
+        "useProvider": "Utiliser ce fournisseur",
+        "test": "Tester",
+        "addProvider": "Ajouter un nouveau fournisseur",
+        "providerNameKey": "Nom (clé)",
+        "displayName": "Nom d'affichage",
+        "addProviderBtn": "Ajouter le fournisseur",
+        "cancel": "Annuler",
+        "save": "Enregistrer"
+    },
+    "prompts": {
+        "title": "Bibliothèque de prompts",
+        "subtitle": "Enregistrez et réutilisez vos meilleurs prompts",
+        "newPrompt": "Nouveau prompt",
+        "searchPlaceholder": "Rechercher des prompts...",
+        "editPrompt": "Modifier le prompt",
+        "promptTitle": "Titre",
+        "promptTitlePlaceholder": "Titre du prompt...",
+        "category": "Catégorie",
+        "systemPrompt": "Prompt système",
+        "systemPromptPlaceholder": "Vous êtes un assistant IA utile...",
+        "noMatchingPrompts": "Aucun prompt correspondant",
+        "noPromptsYet": "Aucun prompt pour l'instant. Créez votre premier !",
+        "use": "Utiliser"
+    },
+    "chat": {
+        "welcome": "Bonjour ! Comment puis-je vous aider aujourd'hui ?",
+        "codeExample": "Voici un exemple de code :",
+        "thinking": "Réfléchit...",
+        "newConversation": "Nouvelle conversation",
+        "systemContext": "Contexte Système",
+        "systemPromptPlaceholder": "Vous êtes un assistant utile..."
+    },
+    "sidebar": {
+        "lightMode": "Mode Clair",
+        "darkMode": "Mode Sombre"
+    }
+}

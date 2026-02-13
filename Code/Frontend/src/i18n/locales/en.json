@@ -1,0 +1,70 @@
+{
+    "app": {
+        "title": "DagBot",
+        "subtitle": "Premium AI Assistant",
+        "newChat": "New conversation",
+        "searchPlaceholder": "Search...",
+        "inputPlaceholder": "Send a message...",
+        "today": "Today",
+        "yesterday": "Yesterday",
+        "send": "Send",
+        "settings": "Settings",
+        "conversations": "Conversations",
+        "noConversations": "No conversations",
+        "model": "Model",
+        "typing": "Typing..."
+    },
+    "settings": {
+        "title": "Settings",
+        "subtitle": "Configure providers and parameters",
+        "modelParams": "Model Parameters",
+        "modelName": "Model Name",
+        "temperature": "Temperature",
+        "topP": "Top P",
+        "maxTokens": "Max Tokens",
+        "presencePenalty": "Presence Penalty",
+        "frequencyPenalty": "Frequency Penalty",
+        "providersTitle": "LLM Providers",
+        "active": "Active",
+        "baseUrl": "Base URL",
+        "apiKey": "API Key",
+        "model": "Model",
+        "autoChoose": "Auto-choose",
+        "freeOnly": "Free models only",
+        "useProvider": "Use Provider",
+        "test": "Test",
+        "addProvider": "Add New Provider",
+        "providerNameKey": "Name (key)",
+        "displayName": "Display Name",
+        "addProviderBtn": "Add Provider",
+        "cancel": "Cancel",
+        "save": "Save"
+    },
+    "prompts": {
+        "title": "Prompt Library",
+        "subtitle": "Save and reuse your best prompts",
+        "newPrompt": "New Prompt",
+        "searchPlaceholder": "Search prompts...",
+        "editPrompt": "Edit Prompt",
+        "promptTitle": "Title",
+        "promptTitlePlaceholder": "Prompt title...",
+        "category": "Category",
+        "systemPrompt": "System Prompt",
+        "systemPromptPlaceholder": "You are a helpful AI assistant...",
+        "noMatchingPrompts": "No matching prompts",
+        "noPromptsYet": "No prompts yet. Create your first one!",
+        "use": "Use"
+    },
+    "chat": {
+        "welcome": "Hello! How can I help you today?",
+        "codeExample": "Here is a code example:",
+        "thinking": "Thinking...",
+        "newConversation": "New Conversation",
+        "systemContext": "System Context",
+        "systemPromptPlaceholder": "You are a helpful assistant..."
+    },
+    "sidebar": {
+        "lightMode": "Light Mode",
+        "darkMode": "Dark Mode"
+    }
+}

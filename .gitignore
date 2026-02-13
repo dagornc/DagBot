@@ -1,0 +1,5 @@
+.env
+.DS_Store
+dagbot_backend.log
+Log/dagbot.db
+Code/Backend/.venv/

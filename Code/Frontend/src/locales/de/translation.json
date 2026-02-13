@@ -1,0 +1,43 @@
+{
+    "app": {
+        "title": "DagBot",
+        "subtitle": "Fortschrittlicher KI-Assistent",
+        "newChat": "Neuer Chat",
+        "conversations": "Konversationen",
+        "inputPlaceholder": "Gib deine Nachricht ein...",
+        "send": "Senden"
+    },
+    "chat": {
+        "welcome": "Wie kann ich dir heute helfen?",
+        "newConversation": "Neue Konversation",
+        "systemPrompt": "Systemanweisungen",
+        "systemPromptPlaceholder": "Du bist ein hilfreicher Assistent..."
+    },
+    "settings": {
+        "title": "Einstellungen",
+        "subtitle": "Konfiguriere dein KI-Erlebnis",
+        "providersTitle": "Anbieter",
+        "baseUrl": "Basis-URL",
+        "apiKey": "API-Schlüssel",
+        "defaultModel": "Standardmodell",
+        "useProvider": "Anbieter verwenden",
+        "test": "Testen",
+        "addProvider": "Anbieter hinzufügen",
+        "providerNameKey": "Anbieter-ID",
+        "displayName": "Anzeigename",
+        "addProviderBtn": "Hinzufügen",
+        "cancel": "Abbrechen",
+        "modelParams": "Modellparameter",
+        "modelName": "Modellname",
+        "temperature": "Temperatur",
+        "topP": "Top P",
+        "maxTokens": "Maximale Token",
+        "presencePenalty": "Anwesenheitsstrafe",
+        "frequencyPenalty": "Frequenzstrafe",
+        "freeOnly": "Nur kostenlose Modelle",
+        "autoChoose": "Automatische Auswahl (OpenRouter)"
+    },
+    "prompts": {
+        "title": "Prompts"
+    }
+}

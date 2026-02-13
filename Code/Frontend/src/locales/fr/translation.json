@@ -1,0 +1,43 @@
+{
+    "app": {
+        "title": "DagBot",
+        "subtitle": "Assistant IA Avancé",
+        "newChat": "Nouvelle discussion",
+        "conversations": "Discussions",
+        "inputPlaceholder": "Écrivez votre message...",
+        "send": "Envoyer"
+    },
+    "chat": {
+        "welcome": "Comment puis-je vous aider aujourd'hui ?",
+        "newConversation": "Nouvelle conversation",
+        "systemContext": "Contexte Système",
+        "systemPromptPlaceholder": "Vous êtes un assistant utile..."
+    },
+    "settings": {
+        "title": "Paramètres",
+        "subtitle": "Configurez votre expérience IA",
+        "providersTitle": "Fournisseurs",
+        "baseUrl": "URL de base",
+        "apiKey": "Clé API",
+        "defaultModel": "Modèle par défaut",
+        "useProvider": "Utiliser",
+        "test": "Tester",
+        "addProvider": "Ajouter un fournisseur",
+        "providerNameKey": "ID Fournisseur",
+        "displayName": "Nom d'affichage",
+        "addProviderBtn": "Ajouter",
+        "cancel": "Annuler",
+        "modelParams": "Paramètres du modèle",
+        "modelName": "Nom du modèle",
+        "temperature": "Température",
+        "topP": "Top P",
+        "maxTokens": "Tokens max",
+        "presencePenalty": "Pénalité de présence",
+        "frequencyPenalty": "Pénalité de fréquence",
+        "freeOnly": "Modèles gratuits uniquement",
+        "autoChoose": "Choix automatique (OpenRouter)"
+    },
+    "prompts": {
+        "title": "Promptothèque"
+    }
+}

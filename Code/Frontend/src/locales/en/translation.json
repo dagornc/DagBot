@@ -1,0 +1,43 @@
+{
+    "app": {
+        "title": "DagBot",
+        "subtitle": "Advanced AI Assistant",
+        "newChat": "New Chat",
+        "conversations": "Conversations",
+        "inputPlaceholder": "Type your message...",
+        "send": "Send"
+    },
+    "chat": {
+        "welcome": "How can I help you today?",
+        "newConversation": "New Conversation",
+        "systemContext": "System Context",
+        "systemPromptPlaceholder": "You are a helpful assistant..."
+    },
+    "settings": {
+        "title": "Settings",
+        "subtitle": "Configure your AI experience",
+        "providersTitle": "Providers",
+        "baseUrl": "Base URL",
+        "apiKey": "API Key",
+        "defaultModel": "Default Model",
+        "useProvider": "Use Provider",
+        "test": "Test",
+        "addProvider": "Add Custom Provider",
+        "providerNameKey": "Provider ID",
+        "displayName": "Display Name",
+        "addProviderBtn": "Add Provider",
+        "cancel": "Cancel",
+        "modelParams": "Model Parameters",
+        "modelName": "Model Name",
+        "temperature": "Temperature",
+        "topP": "Top P",
+        "maxTokens": "Max Tokens",
+        "presencePenalty": "Presence Penalty",
+        "frequencyPenalty": "Frequency Penalty",
+        "freeOnly": "Free Models Only",
+        "autoChoose": "Auto Choose (OpenRouter)"
+    },
+    "prompts": {
+        "title": "Prompts"
+    }
+}

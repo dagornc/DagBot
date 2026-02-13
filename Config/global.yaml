@@ -1,0 +1,153 @@
+# DagBot - Global Configuration
+# All LLM provider defaults and application settings
+
+app:
+  name: "DagBot"
+  version: "1.0.0"
+  debug: false
+  backend_port: 8000
+  frontend_port: 5173
+
+database:
+  path: "dagbot.db"
+
+defaults:
+  temperature: 0.7
+  top_p: 1.0
+  max_tokens: 4096
+  presence_penalty: 0.0
+  frequency_penalty: 0.0
+
+llm_providers:
+  # Configuration pour OpenAI
+  openai:
+    display_name: "OpenAI"
+    access_method: "openai_compatible"
+    base_url: "https://api.openai.com/v1"
+    api_key: "${OPENAI_API_KEY}"
+    default_model: "gpt-4o-mini"
+    icon: "sparkles"
+    description: "Industry standard models with high reasoning capabilities."
+    recommended: true
+    models:
+      - "gpt-4o"
+      - "gpt-4o-mini"
+      - "gpt-4-turbo"
+      - "gpt-3.5-turbo"
+
+  # Configuration pour OpenRouter (agrégateur d'APIs LLM)
+  openrouter:
+    display_name: "OpenRouter"
+    access_method: "openai_compatible"
+    base_url: "https://openrouter.ai/api/v1"
+    api_key: "${OPENROUTER_API_KEY}"
+    default_model: "z-ai/glm-4.5-air:free"
+    icon: "globe"
+    description: "Aggregator accessing many models (Google, Meta, Mistral, etc.). Ideal for testing."
+    recommended: true
+    models:
+      - "google/gemini-2.0-flash-exp:free"
+      - "google/gemini-2.0-flash-thinking-exp:free"
+      - "meta-llama/llama-3-70b-instruct"
+      - "anthropic/claude-3-haiku"
+      - "mistralai/mistral-large"
+
+  # Configuration pour Anthropic (modèles Claude)
+  anthropic:
+    display_name: "Anthropic"
+    access_method: "openai_compatible"
+    base_url: "https://api.anthropic.com/v1"
+    api_key: "${ANTHROPIC_API_KEY}"
+    default_model: "claude-3-haiku-20240307"
+    icon: "brain"
+    description: "Models known for safety, nuance, and large context windows."
+    recommended: true
+    models:
+      - "claude-3-opus-20240229"
+      - "claude-3-sonnet-20240229"
+      - "claude-3-haiku-20240307"
+
+  # Configuration pour Mistral AI
+  mistral_ai:
+    display_name: "Mistral AI"
+    access_method: "openai_compatible"
+    base_url: "https://api.mistral.ai/v1"
+    api_key: "76cwpvjZqnFw1U0jLCEBKOHh5FprX2OJ"
+    default_model: "mistral-small-latest"
+    icon: "wind"
+    description: "Efficient and open-weight models from Mistral AI."
+    recommended: false
+    models:
+      - "mistral-large-latest"
+      - "mistral-small-latest"
+      - "open-mixtral-8x22b"
+
+  # Configuration pour Ollama (exécution locale de modèles)
+  ollama:
+    display_name: "Ollama"
+    access_method: "openai_compatible"
+    base_url: "http://127.0.0.1:11434/v1"
+    api_key: "ollama"
+    default_model: "llama3"
+    icon: "server"
+    description: "Run LLMs locally on your own machine. Requires Ollama installed."
+    recommended: false
+    models:
+      - "llama3"
+      - "llama2"
+      - "mistral"
+      - "gemma"
+
+  # Configuration pour Hugging Face Inference API
+  huggingface:
+    display_name: "Hugging Face"
+    access_method: "huggingface_inference_api"
+    base_url: "https://api-inference.huggingface.co/v1"
+    api_key: "${HUGGINGFACE_API_KEY}"
+    default_model: "meta-llama/Llama-3-8B-Instruct"
+    icon: "smile"
+    description: "Open-source model hub with thousands of community models."
+    recommended: false
+    models:
+      - "meta-llama/Llama-3-8B-Instruct"
+      - "mistralai/Mistral-7B-Instruct-v0.3"
+      - "google/gemma-2b-it"
+
+  # Configuration pour LM Studio (exécution locale de modèles)
+  lm_studio:
+    display_name: "LM Studio"
+    access_method: "openai_compatible"
+    base_url: "http://127.0.0.1:1234/v1"
+    api_key: "lm-studio"
+    default_model: "local-model"
+    icon: "monitor"
+    description: "Desktop app for running local LLMs with a user-friendly GUI."
+    recommended: false
+    models:
+      - "local-model"
+
+  # Configuration pour vLLM (serveur d'inférence rapide)
+  vllm:
+    display_name: "vLLM"
+    access_method: "openai_compatible"
+    base_url: "http://127.0.0.1:8000/v1"
+    api_key: "vllm"
+    default_model: "local-model"
+    icon: "zap"
+    description: "High-throughput inference server optimized for production workloads."
+    recommended: false
+    models:
+      - "local-model"
+
+  # Configuration pour une API générique compatible OpenAI
+  generic_api:
+    display_name: "Generic API"
+    access_method: "openai_compatible"
+    base_url: "https://api.example.com/v1"
+    api_key: "${GENERIC_API_KEY}"
+    default_model: "default"
+    icon: "settings"
+    description: "Custom OpenAI-compatible API endpoint for any provider."
+    recommended: false
+    models:
+      - "default"

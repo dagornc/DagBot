@@ -1,0 +1,300 @@
+@import "tailwindcss";
+
+/* ══════════════════════════════════════════════
+   DagBot — Apple HIG 2025 Design System
+   ══════════════════════════════════════════════ */
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ─── Apple HIG Color Tokens ─── */
+:root {
+  --color-primary: #007AFF;
+  --color-primary-hover: #0056CC;
+  --color-destructive: #FF3B30;
+  --color-success: #34C759;
+  --color-warning: #FF9500;
+
+  /* Light mode */
+  --color-bg: #F2F2F7;
+  --color-surface: #FFFFFF;
+  --color-surface-secondary: #F9F9FB;
+  --color-text-primary: #1C1C1E;
+  --color-text-secondary: #8E8E93;
+  --color-text-tertiary: #C7C7CC;
+  --color-border: #E5E5EA;
+  --color-separator: #C6C6C8;
+  --color-sidebar-bg: #FFFFFF;
+  --color-input-bg: #FFFFFF;
+  --color-bubble-user: #007AFF;
+  --color-bubble-user-text: #FFFFFF;
+  --color-bubble-assistant: #E9E9EB;
+  --color-bubble-assistant-text: #1C1C1E;
+  --color-overlay: rgba(0, 0, 0, 0.3);
+  --color-code-bg: #F2F2F7;
+}
+
+.dark {
+  --color-bg: #000000;
+  --color-surface: #1C1C1E;
+  --color-surface-secondary: #2C2C2E;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #8E8E93;
+  --color-text-tertiary: #48484A;
+  --color-border: #38383A;
+  --color-separator: #38383A;
+  --color-sidebar-bg: rgba(28, 28, 30, 0.8);
+  --color-input-bg: rgba(44, 44, 46, 0.6);
+  --color-bubble-user: #007AFF;
+  --color-bubble-user-text: #FFFFFF;
+  --color-bubble-assistant: rgba(255, 255, 255, 0.06);
+  --color-bubble-assistant-text: #FFFFFF;
+  --color-overlay: rgba(0, 0, 0, 0.6);
+  --color-code-bg: #2C2C2E;
+}
+
+/* ─── Base & Typography ─── */
+@font-face {
+  font-family: 'SF Pro Display';
+  src: local('SF Pro Display'), local('.SFNSDisplay'), local('Inter');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display',
+    'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ─── Scrollbar Styling ─── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-text-tertiary);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-secondary);
+}
+
+/* ─── Glassmorphism Utilities ─── */
+.glass {
+  background: var(--color-sidebar-bg);
+  backdrop-filter: blur(40px) saturate(180%);
+  -webkit-backdrop-filter: blur(40px) saturate(180%);
+  border: 1px solid var(--color-border);
+}
+
+.glass-input {
+  background: var(--color-input-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--color-border);
+}
+
+/* ─── Apple-style Toggle ─── */
+.toggle-track {
+  width: 51px;
+  height: 31px;
+  border-radius: 15.5px;
+  background: var(--color-text-tertiary);
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.toggle-track.active {
+  background: var(--color-primary);
+}
+
+.toggle-thumb {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.2s ease;
+}
+
+.toggle-track.active .toggle-thumb {
+  transform: translateX(20px);
+}
+
+/* ─── Animations ─── */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.35s ease-out;
+}
+
+.animate-slide-in {
+  animation: slideInLeft 0.3s ease-out;
+}
+
+.typing-dot {
+  animation: pulse 1.4s ease-in-out infinite;
+}
+
+.typing-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* ─── Markdown Styles ─── */
+.markdown-body p {
+  margin-bottom: 0.5em;
+}
+
+.markdown-body p:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  list-style: disc;
+  margin-left: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.markdown-body ol {
+  list-style: decimal;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.markdown-body h1 {
+  font-size: 1.5em;
+}
+
+.markdown-body h2 {
+  font-size: 1.3em;
+}
+
+.markdown-body h3 {
+  font-size: 1.1em;
+}
+
+.markdown-body a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.markdown-body blockquote {
+  border-left: 3px solid var(--color-border);
+  padding-left: 1em;
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+.markdown-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+.markdown-body th,
+.markdown-body td {
+  border: 1px solid var(--color-border);
+  padding: 0.5em;
+  text-align: left;
+}
+
+.markdown-body th {
+  background: var(--color-surface-secondary);
+  font-weight: 600;
+}
+
+/* ─── Premium Mesh Gradient ─── */
+.mesh-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-bg);
+  background-image:
+    radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
+    radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+  z-index: 0;
+  opacity: 0.4;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.dark .mesh-gradient {
+  opacity: 0.6;
+  background-image:
+    radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
+    radial-gradient(at 50% 0%, hsla(225, 39%, 20%, 1) 0, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(339, 49%, 20%, 1) 0, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(225, 39%, 20%, 1) 0, transparent 50%),
+    radial-gradient(at 100% 100%, hsla(339, 49%, 20%, 1) 0, transparent 50%);
+}

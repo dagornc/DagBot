@@ -1,0 +1,68 @@
+{
+    "app": {
+        "title": "DagBot",
+        "subtitle": "Premium KI-Assistent",
+        "newChat": "Neue Konversation",
+        "searchPlaceholder": "Suchen...",
+        "inputPlaceholder": "Nachricht senden...",
+        "today": "Heute",
+        "yesterday": "Gestern",
+        "send": "Senden",
+        "settings": "Einstellungen",
+        "conversations": "Konversationen",
+        "noConversations": "Keine Konversationen",
+        "model": "Modell",
+        "typing": "Schreibt..."
+    },
+    "settings": {
+        "title": "Einstellungen",
+        "subtitle": "Anbieter und Parameter konfigurieren",
+        "modelParams": "Modell-Parameter",
+        "modelName": "Modellname",
+        "temperature": "Temperatur",
+        "topP": "Top P",
+        "maxTokens": "Maximale Token",
+        "presencePenalty": "Anwesenheitsstrafe",
+        "frequencyPenalty": "Frequenzstrafe",
+        "providersTitle": "LLM Anbieter",
+        "active": "Aktiv",
+        "baseUrl": "Basis-URL",
+        "apiKey": "API-Schlüssel",
+        "defaultModel": "Standardmodell",
+        "useProvider": "Anbieter verwenden",
+        "test": "Testen",
+        "addProvider": "Neuen Anbieter hinzufügen",
+        "providerNameKey": "Name (Schlüssel)",
+        "displayName": "Anzeigename",
+        "addProviderBtn": "Anbieter hinzufügen",
+        "cancel": "Abbrechen",
+        "save": "Speichern"
+    },
+    "prompts": {
+        "title": "Prompt-Bibliothek",
+        "subtitle": "Speichern und wiederverwenden Sie Ihre besten Prompts",
+        "newPrompt": "Neuer Prompt",
+        "searchPlaceholder": "Prompts suchen...",
+        "editPrompt": "Prompt bearbeiten",
+        "promptTitle": "Titel",
+        "promptTitlePlaceholder": "Prompt-Titel...",
+        "category": "Kategorie",
+        "systemPrompt": "System-Prompt",
+        "systemPromptPlaceholder": "Du bist ein hilfreicher KI-Assistent...",
+        "noMatchingPrompts": "Keine übereinstimmenden Prompts",
+        "noPromptsYet": "Noch keine Prompts. Erstellen Sie Ihren ersten!",
+        "use": "Verwenden"
+    },
+    "chat": {
+        "welcome": "Hallo! Wie kann ich Ihnen heute helfen?",
+        "codeExample": "Hier ist ein Code-Beispiel:",
+        "thinking": "Denkt nach...",
+        "newConversation": "Neue Konversation",
+        "systemContext": "Systemkontext",
+        "systemPromptPlaceholder": "Du bist ein hilfreicher Assistent..."
+    },
+    "sidebar": {
+        "lightMode": "Heller Modus",
+        "darkMode": "Dunkler Modus"
+    }
+}
