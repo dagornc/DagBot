@@ -3,3 +3,7 @@
 dagbot_backend.log
 Log/dagbot.db
 Code/Backend/.venv/
+__pycache__/
+Doc/
+README.md
+firebase-debug.log
